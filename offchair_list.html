@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list chair </title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="js bootstrap/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="fontawe/css/all.css">
+    <link rel="stylesheet" href="css bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css bootstrap/bootstrap.css">
+    <script src="js bootstrap/bootstrap.min.js"></script>
+    <script src="js bootstrap/angular.min.js"></script>
+    <script src="js bootstrap/angular-route.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-collapse ul li {
+        list-style: none;
+        font-family: 'Mulish', sans-serif;
+        line-height: 70px;
+        margin: 0px auto;
+
+
+    }
+
+    .navbar-collapse ul li a {
+        color: #333333;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+
+    }
+
+    .navbar-collapse ul li a:hover {
+        transform: 1.2s;
+        color: chocolate;
+    }
+
+
+    .card {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        list-style: none;
+
+
+    }
+
+
+    .col-md-3 {
+        flex-basis: 30%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid">
+        <header style="text-align:center ;">header</header>
+        <section>
+            <div class="container" ng-app="myApp" ng-controller="myControl">
+                <div class="col-md-3">
+                    <div class="navbar-collapse">
+                        <input style="width:165px; ;" type="text" name="" id="txtsp" ng-model="tenSP"
+                            placeholder=" Search...">
+                        <ul>
+                            <li><a href="">SOFA</a></li>
+                            <li> <a href="">OFFICE CHAIR</a></li>
+                            <li><a href="">KID'S CHAIR</a></li>
+                            <li><a href="">COMPARE</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="row mt-4">
+                        <div class="col-md-4" ng-repeat="item in listSP|filter:tenSP">
+
+                            <div class="card mx-auto mt-3 pt-1">
+                                <a href="{{item.link}} " class="thumbnail"
+                                    style="text-decoration: none;color: #333333;">
+                                    <div class="d-flex sale ">
+                                        <div class="btn">SALE</div>
+                                    </div>
+                                    <img class='img-thumbnail' src="{{item.img}}" width="auto" height="auto" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title" style="text-align:center ;"> {{item.name}}</h5>
+                                        <p class="card-text" style="text-align:center ;">{{item.price}}</p>
+
+                                        <button class="btn btn-danger" style="text-align:center ;">View Detail</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <footer style="text-align:center ;"> footer</footer>
+
+    <script>
+
+        var app = angular.module("myApp", [])
+        app.controller("myControl", function ($rootScope) {
+            $rootScope.listSP = [{
+                "name": "SG350",
+                "price": "$100",
+                "img": "offchair/sg350.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG669",
+                "price": "$120",
+                "img": "offchair/sg669.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG718",
+                "price": "$75",
+                "img": "offchair/sg718.jpg",
+                "link": "#",
+            },
+
+            {
+                "name": "SG901",
+                "price": "$95",
+                "img": "offchair/sg901.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG901A",
+                "price": "$105",
+                "img": "offchair/sg901a.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG903",
+                "price": "$95",
+                "img": "offchair/sg903.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG920",
+                "price": "$130",
+                "img": "offchair/sg920.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG1020",
+                "price": "$120",
+                "img": "offchair/sg1020.jpg",
+                "link": "#",
+            },
+            {
+                "name": "SG1020",
+                "price": "$120",
+                "img": "offchair/sg1020.jpg",
+                "link": "#",
+            },
+
+
+
+            ];
+
+
+        })
+    </script>
+</body>
+
+</html>
