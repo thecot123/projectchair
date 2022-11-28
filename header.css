@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    box-shadow: 4px 4px 4px rgba(196, 196, 196, 0.575);
+}
+
+.menu-bar {
+    background-color: #E8E9DA;
+}
+
+.nav-link {
+    font-size: 15px;
+    margin: 3px 30px;
+    font-weight: bold;
+    color: #222222 !important;
+}
+
+h2 {
+    padding: 15px;
+}

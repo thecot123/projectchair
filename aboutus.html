@@ -15,22 +15,71 @@
     <script src="js bootstrap/angular.min.js"></script>
     <script src="js bootstrap/angular-route.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
     <style>
         .form-group {
             width: max-content;
         }
-    
-       form{
-        font-family: 'Mulish', sans-serif;
-       }
+
+        form {
+            font-family: 'Mulish', sans-serif;
+        }
     </style>
-   
+
 </head>
 
 <body>
 
     <div class="container">
-        <header>name</header>
+        <div class="header">
+            <div class="menu-bar">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"><img src="anhlogo3.png" alt=""
+                            style="width: 230px; height:90px ;"></a></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    PRODUCT
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="sofachair_list.html">SOFA</a>
+                                    <a class="dropdown-item" href="offchair_list.html">OFFICE CHAIR</a>
+                                    <a class="dropdown-item" href="kidchair_list.html">KID'S CHAIR</a>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    COMPARE
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">SOFA</a>
+                                    <a class="dropdown-item" href="#">OFFICE CHAIR</a>
+                                    <a class="dropdown-item" href="#">KID'S CHAIR</a>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="aboutus.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--main-->
         <div class="main">
             <div class="signin-content">
                 <div class="signin-image">
@@ -72,7 +121,97 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        <footer class="text-center text-lg-start" style="background-color: #E8E9DA;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                RICHFIELD CHAIRS
+                            </h6>
+                            <p>
+                                Richfield Chairs is an organization selling Chairs. They produce various chairs of
+                                different types suiting every requirement and into various sizes, starting from kids
+                                to
+                                office to home and etc.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a>SOFA</a>
+                            </p>
+                            <p>
+                                <a>OFFICE CHAIR</a>
+                            </p>
+                            <p>
+                                <a>KID'S CHAIR</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i>590 CMT8,Q3,HCM CITY</p>
+                            <p><i class="fas fa-envelope mr-3"></i>thecot2004@gmail.com </p>
+                            <p><i class="fas fa-phone mr-3"></i>0388546215</p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                href="https://www.facebook.com/thecot.haha" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                Copyright &copy; by T1.2208.A0(Group 5)
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
 </body>
 
 </html>
