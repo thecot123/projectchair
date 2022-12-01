@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list chair </title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
     <script src="js bootstrap/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="fontawe/css/all.css">
     <link rel="stylesheet" href="css bootstrap/bootstrap.min.css">
@@ -20,51 +19,44 @@
     <link rel="stylesheet" href="header.css">
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
+    h3 {
+        padding: 10px;
     }
 
-    .navbar-collapse ul li {
-        list-style: none;
-        font-family: 'Mulish', sans-serif;
-        line-height: 70px;
-        margin: 0px auto;
-
-
+    .main .content-asset p {
+        font-size: 20px;
+        text-indent: 2em;
+        line-height: 32px;
+        margin: 10px 17px;
     }
 
-    .navbar-collapse ul li a {
-        color: #333333;
-        font-weight: bolder;
-        text-align: center;
-        text-decoration: none;
-
+    .main .comments {
+        border: 0.5px solid rgb(219, 219, 219);
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        width: 70%;
     }
 
-    .navbar-collapse ul li a:hover {
-        transform: 1.2s;
-        color: chocolate;
+    .main .comments span h4 {
+        margin-left: 40px;
+        font-size: 15px;
     }
 
-
-    .card {
-        display: block;
+    .m-info {
+        width: 350px;
+        font-size: 15px;
+        margin-bottom: 40px;
     }
 
+    .m-info p {
 
-
-    .col-md-3 {
-        flex-basis: 30%;
-    }
-
-    h2 {
-        text-align: center;
+        font-size: 15px;
     }
 </style>
 
 <body>
-
     <div class="container">
         <div class="header">
             <div class="menu-bar">
@@ -81,7 +73,7 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                             </li>
-    
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="sofachair_list.html" id="navbarDropdown"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -91,11 +83,11 @@
                                     <a class="dropdown-item" href="sofachair_list.html">SOFA</a>
                                     <a class="dropdown-item" href="offchair_list.html">OFFICE CHAIR</a>
                                     <a class="dropdown-item" href="kidchair_list.html">KID'S CHAIR</a>
-    
+
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="sofacomp.html" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     COMPARE
                                     <span class="caret"></span></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -114,54 +106,114 @@
                 </nav>
             </div>
         </div>
-        <!--main-->
+        <!--main chinh -->
         <div class="main">
-            <h2>OFFICE CHAIR</h2>
-            <div class="aa" ng-app="myApp" ng-controller="myControl">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="navbar-collapse">
-                            <input style="width:165px; ;" type="text" name="" id="txtsp" ng-model="tenSP"
-                                placeholder=" Search...">
-                            <ul>
-                                <li><a href="sofachair_list.html">SOFA</a></li>
-                                <li> <a href="offchair_list.html">OFFICE CHAIR</a></li>
-                                <li><a href="kidchair_list.html">KID'S CHAIR</a></li>
-                                <li><a href="">COMPARE</a></li>
-                            </ul>
+            <div class="content-asset">
+                <h3 class="text-center">INFORMATION </h3>
+                <p>
+                    Richfield Chairs we are a professional furniture company so we always pay attention to the user
+                    experience especially online shopping. When you come to us, you must have a very familiar feeling
+                    here
+                    has everything you need in terms of furniture.
+                    We deliver anywhere in the world.
+                    So get ready to shop at Richfield Chairs
+                    TODAY!
+                </p>
+                <p>
+                    Products of Richfield Chairs are always available through online shopping channels. Give us your
+                    address
+                    and wait for the goods to arrive
+                    Contact us at the following email address: sales@gmail.Richfield Chairs.VN
+                </p>
+                <p>
+                    For you and your comfort we will help you find what you need
+                </p>
+
+            </div>
+            <hr>
+            <div class="block-2 wrap pad-2">
+                <h3 class="text-center"> feedback </h3>
+                <div class="box-2">
+                    <div class="comments">
+                        <div>
+                            <em>"i bought a sofa and its quality is excellent but my kids love it very much, the
+                                material is
+                                very
+                                durable and doesn't smudge."</em>
                         </div>
+                        <span>
+                            <h4> Ngoc Nguyen </h4>
+                        </span>
+
+
                     </div>
 
-                    <div class="col-md-9">
-                        <div class="row mt-4">
-                            <div class="col-md-4" ng-repeat="item in listSP|filter:tenSP">
-                                <div class="card mx-auto mt-3 pt-1">
-                                    <a href="{{item.link}} " class="thumbnail"
-                                        style="text-decoration: none;color: #333333;">
-                                        <div class="d-flex sale ">
-                                            <div class="btn">SALE</div>
-                                        </div>
-                                        <img class='img-thumbnail' src="{{item.img}}" width="auto" height="auto" />
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title" style="text-align:center ;"> {{item.name}}</h5>
-                                            <p class="card-text" style="text-align:center ;">{{item.price}}</p>
+                    <div class="comments">
+                        <div>
+                            <em>"I have been ordering for five days and I feel the choice is right
 
-                                            <button class="btn btn-danger" style="text-align:center ;">View
-                                                Detail</button>
-                                        </div>
-                                    </a>
-                                </div>
+                                "</em>
+                        </div>
+                        <span>
+                            <h4>Nguyen Tu</h4>
+                        </span>
+
+                    </div>
+
+                    <div class="comments">
+                        <div>
+                            <em>"i really like your product it's very essential and durable."</em>
+                        </div>
+                        <span>
+                            <h4>Thanh Tuyen</h4>
+                        </span>
+                    </div>
+
+
+
+
+
+                </div>
+                <hr>
+                <div class="box-3 text-center">
+                    <h2 class="text-center">Web Creators</h2>
+                    <div class="row" style="margin-bottom: 20px">
+                        <div class="col-md-4 " id="creators">
+                            <img src="#" alt="" width="60%" style="border-radius:50%">
+                            <div class="m-info">
+                                <p><strong>Name</strong>:Nguyen Van The </p>
+                                <p><strong>Student ID</strong>: student1</p>
+                                <p><strong>Email</strong>: thecot2004@gmail.com </p>
                             </div>
+                        </div>
+                        <div class="col-md-4 " id="creators">
+                            <img src="#" alt="" width="85%" style="border-radius:50%">
+                            <div class="m-info">
+                                <p>
+                                    <strong>Name</strong>: Nguyen Van Quang
+                                </p>
 
+                                <p> <strong>Student ID</strong>: Student1 </p>
 
+                                <p> <strong>Email</strong>: quang@gmail.com
 
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="col-md-4" id="creators">
+                            <img src="#" alt="" width="85%" style="border-radius:50%">
+                            <div class="m-info">
+                                <p>
+                                    <strong>Name</strong>: Nguyen Huu Hao
+                                </p>
 
+                                <p> <strong>Student ID</strong>: Student1 </p>
 
+                                <p> <strong>Email</strong>: hao@gmail.com
 
-
-
-
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -170,9 +222,23 @@
 
 
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
-        </div>
-        <hr>
+            <hr>
+      
+        <!-- Footer -->
         <footer class="text-center text-lg-start" style="background-color: #E8E9DA;">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
@@ -187,8 +253,7 @@
                             </h6>
                             <p>
                                 Richfield Chairs is an organization selling Chairs. They produce various chairs of
-                                different types suiting every requirement and into various sizes, starting from kids
-                                to
+                                different types suiting every requirement and into various sizes, starting from kids to
                                 office to home and etc.
                             </p>
                         </div>
@@ -260,76 +325,11 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer -->
+
+
+
+
     </div>
-
-
-    <script>
-
-        var app = angular.module("myApp", [])
-        app.controller("myControl", function ($rootScope) {
-            $rootScope.listSP = [{
-                "name": "SG350",
-                "price": "$100",
-                "img": "offchair/sg350.jpg",
-                "link": "sg350.html",
-            },
-            {
-                "name": "SG669",
-                "price": "$120",
-                "img": "offchair/sg669.jpg",
-                "link": "sg669.html",
-            },
-            {
-                "name": "SG718",
-                "price": "$75",
-                "img": "offchair/sg718.jpg",
-                "link": "sg718.html",
-            },
-
-            {
-                "name": "SG901",
-                "price": "$95",
-                "img": "offchair/sg901.jpg",
-                "link": "sg901.html",
-            },
-            {
-                "name": "SG901A",
-                "price": "$105",
-                "img": "offchair/sg901a.jpg",
-                "link": "sg901a.html",
-            },
-            {
-                "name": "SG903",
-                "price": "$95",
-                "img": "offchair/sg903.jpg",
-                "link": "sg903.html",
-            },
-            {
-                "name": "SG920",
-                "price": "$130",
-                "img": "offchair/sg920.jpg",
-                "link": "sg920.html",
-            },
-            {
-                "name": "SG1020",
-                "price": "$120",
-                "img": "offchair/sg1020.jpg",
-                "link": "sg1020.html",
-            },
-            {
-                "name": "SG1020",
-                "price": "$120",
-                "img": "offchair/sg1020.jpg",
-                "link": "#",
-            },
-
-
-
-            ];
-
-
-        })
-    </script>
 </body>
 
 </html>
